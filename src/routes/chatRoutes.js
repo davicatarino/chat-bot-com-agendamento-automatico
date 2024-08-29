@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { handleChat } from '../services/openAi/chatHandler.js';
+import { handleChat } from '../services/openAi/handleChat.js';
 import {
   auth,
   redirect,
@@ -13,7 +13,7 @@ const router = Router();
 
 router.post('/Julia', handleChat);
 router.get('/google', auth);
-router.post('/Scheduling', handleScheduling);
+router.post('/event', handleEvent);
 router.get('/redirect', redirect);
 router.get('/freebusy',async (req, res) => {
   // Verifique e renove o token se necessário
