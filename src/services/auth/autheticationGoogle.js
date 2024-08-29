@@ -1,4 +1,4 @@
-import config from '../config/index.js';
+import config from '../../config/index.js';
 import { google } from 'googleapis';
 import fs from 'fs';
 import path from 'path';

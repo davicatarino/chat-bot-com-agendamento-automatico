@@ -1,4 +1,4 @@
-import { oauth2Client } from './autheticationGoogle.js';
+import { oauth2Client } from './../auth/autheticationGoogle.js';
 import { google } from 'googleapis';
 import moment from 'moment-timezone';
 

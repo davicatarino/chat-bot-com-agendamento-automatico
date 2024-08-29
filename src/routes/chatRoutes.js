@@ -1,13 +1,13 @@
 import { Router } from 'express';
-import { handleChat } from '../services/openAiServices.js';
+import { handleChat } from '../services/openAi/chatHandler.js';
 import {
   auth,
   redirect,
   oauth2Client,
   refreshToken,
-} from '../services/autheticationGoogle.js';
-import { handleAvailable } from '../services/calenderServices.js';
-import { handleScheduling } from '../services/scheduling.js';
+} from '../services/auth/autheticationGoogle.js';
+import { handleAvailable } from '../services/google/HandleAvailable.js';
+import { handleEvent } from '../services/google/handleEvent.js';
 
 const router = Router();
 

@@ -1,9 +1,9 @@
-import { oauth2Client } from './autheticationGoogle.js';
+import { oauth2Client } from '../auth/autheticationGoogle.js';
 import { google } from 'googleapis';
 import moment from 'moment-timezone';
 
 // Função para calcular horários livres nos próximos 7 dias
-export async function handleScheduling(req, res) {
+export async function handleEvent(req, res) {
   try {
     const calendar = google.calendar({ version: 'v3', auth: oauth2Client });
     console.log('Dados recebidos:', req.body);

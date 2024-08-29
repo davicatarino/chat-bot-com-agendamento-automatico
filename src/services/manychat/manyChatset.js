@@ -1,6 +1,6 @@
 
 import axios from 'axios';
-import config from '../config/index.js';
+import config from '../../config/index.js';
 /* import { getUserID, getAssistantMessage } from './services/openaiService'; */
 config(); // Configura as variáveis de ambiente
 
